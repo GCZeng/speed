@@ -7,8 +7,8 @@ def gitUrl = 'https://github.com/GCZeng/speed.git'   // Git仓库的url
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-version = "1.0.2" //发布版本号
-group = "com.speed" //最终引用形式，如compile 'com.leon.lfilepicker:1.0.0'，其中lfilepicker在后面配置
+version = "1.0.3" //发布版本号
+group = "com.speed" //最终引用形式
 
 android {
     compileSdkVersion 25
@@ -79,6 +79,7 @@ install {
                 licenses {
                     license {
                         name 'Apache-2.0' //和之前自己定义的协议一致
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                     }
                 }
                 developers {
